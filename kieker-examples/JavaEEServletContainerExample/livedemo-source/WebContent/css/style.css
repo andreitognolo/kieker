@@ -260,9 +260,10 @@ div#footer {
  display: inline-block;
  padding: 0 .75em;
  white-space: nowrap;
- /* IE7 hack to make inline-block effective on block element */
+ /* (the next two lines) IE7 hack to make inline-block effective on block element */
  zoom: 1;
  *display: inline;
+ /* The asterisk (*) in front of display: inline allows for other browsers to ignore that line. */
 }
 .nav li.last { border-right: none }
 
